@@ -1,0 +1,8 @@
+const { resolve } = require('path');
+
+module.exports = {
+    config: resolve(__dirname, 'src', 'config', 'database.js'), // rota para o arquivo de banco de dados
+    'models-path': resolve(__dirname, 'src', 'app', 'models'), // rota para o arquivo de models (models é o conceito da abstração do objeto do banco de dados dentro da aplicação)
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // rota para o arquivo de migrations (migration é o conceito de controle de versões do banco de dados)
+    'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'), // rota para o arquivo de seeds (seeds é um conceito de popular o banco de dados em massa)
+};
